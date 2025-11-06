@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Blondies Coffee</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="page-hero" style="background-image: url('images/over-ons-gallery-image3.avif')">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Reserveren</h1>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Menu Display Section -->
+        <section class="foto-display-section">
+            <div class="menu-display-container">
+                <!-- Header Section -->
+                <div class="menu-display-header">
+                    <span class="section-badge"> De beste koffie</span>
+                    <h2 class="section-title padding-bottom-sec animate-in">Blondies coffee - Micro roastery – <br>Speciality coffee Breakfast - Lunch – <br>Apérobar</h2>
+                    <p class="menu-display-description">
+                        Zin in een moment vol geurige koffie, huisgemaakt lekkers of een relaxte apérovibe? Reserveer je tafel bij Blondies in hartje Halle.                    </p>
+                </div>
+                
+                <!-- Container for Menu Image -->
+                <div class="container">
+                    <div class="menu-display-content">
+                        <div class="foto-display-content-sec">
+                            <div style="position:relative;max-width:960px;margin:0 auto;">
+                                <iframe
+                                id="frituurapp-reservation-inline-qr-blondies"
+                                src="https://orderapp.be/reservations/embed?host=qr-blondies"
+                                title="Reserveren"
+                                loading="lazy"
+                                allow="fullscreen"
+                                style="width:100%;border:0;border-radius:24px;min-height:640px;box-shadow:0 24px 80px
+                                rgba(15,23,42,0.18);background-color:transparent;"
+                                ></iframe>
+                                </div>
+                                <script>
+                                (function() {
+                                var iframe = document.getElementById("frituurapp-reservation-inline-qr-blondies");
+                                if (!iframe) {
+                                return;
+                                }
+                                var minHeight = 640;
+                                function applyHeight(nextHeight) {
+                                if (!nextHeight || !Number.isFinite(nextHeight)) {
+                                return;
+                                }
+                                iframe.style.height = Math.max(minHeight, Number(nextHeight)) + 'px';
+                                }
+                                window.addEventListener('message'
+                                , function(event) {
+                                if (!event || typeof event.data !== 'object' || event.data === null) {
+                                return;
+                                }
+                                if (event.data.type !== 'frituurapp-reservation-resize') {
+                                return;
+                                }
+                                });
+                                applyHeight(Number(event.data.height));
+                                function requestMeasurement() {
+                                try {
+                                if (!iframe.contentWindow) {
+                                return;
+                                }
+                                } catch (err) {
+                                iframe.contentWindow.postMessage({ type: 'frituurapp-reservation-measure' },
+                                '*');
+                                /* noop */
+                                }
+                                }
+                                if (iframe.addEventListener) {
+                                iframe.addEventListener('load'
+                                , function() {
+                                requestMeasurement();
+                                setTimeout(requestMeasurement, 300);
+                                });
+                                }
+                                window.addEventListener('resize'
+                                , function() {
+                                requestMeasurement();
+                                });
+                                if (document.readyState === 'complete') {
+                                requestMeasurement();
+                                } else {
+                                var handleReady = function() {
+                                window.removeEventListener('DOMContentLoaded'
+                                , handleReady);
+                                requestMeasurement();
+                                };
+                                window.addEventListener('DOMContentLoaded'
+                                , handleReady);
+                                }
+                                })();
+                                </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+    </main>
+    
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/load-components.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

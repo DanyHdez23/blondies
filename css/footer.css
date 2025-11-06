@@ -1,0 +1,194 @@
+/* ===========================
+   FOOTER STYLES
+   =========================== */
+
+   .footer {
+    background: var(--dark-green);
+    color: var(--white);
+    padding: 80px 0 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-bottom: 0px;
+}
+
+/* Column 1: Logo & Contact */
+.footer-column-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 35%;
+    padding-bottom: 30px;
+}
+
+.footer-logo img {
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-contact-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.footer-icon-column {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.footer-text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-text-column p {
+    margin: 0;
+    font-size: 16px;
+    color: var(--white);
+    font-family: var(--font-inter);
+    line-height: 1.4;
+}
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Column 2: Our Links */
+.footer-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--white);
+    font-family: var(--font-inter);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--font-inter);
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: var(--primary-gold);
+}
+
+/* Column 3: Opening Hours */
+.opening-hours {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.hours-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+    font-family: var(--font-inter);
+}
+
+.hours-item .day {
+    color: var(--primary-gold);
+    font-weight: 400;
+}
+
+.hours-item .time {
+    color: var(--white);
+    font-weight: 400;
+}
+
+/* Column 4: Follow Our Activity */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background: var(--white);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+/* Bottom Row */
+.footer-bottom {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.15); */
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: var(--white);
+    font-family: var(--font-inter);
+    margin: 0;
+    width:80%;
+    text-align: center;
+}
+
+.footer-dna-logo {
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-dna-logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Blondies Coffee</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <section class="page-hero" style="background-image: url('images/home-gallery-image3.jpg')">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Contact</h1>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Us Section as per visual design -->
+        <section class="contact-hero-section">
+            <div class="container contact-hero-grid">
+                <div class="contact-info-col">
+                    <span class="section-badge">CONTACT</span>
+                    <h2 class="section-title">Neem contact op, wij zetten de koffie vast klaar</h2>
+                    <p class="section-description-bodytext contact-pg-text">
+                        Bij Blondies draait alles om verbinding met onze koffie, met de buurt en vooral met jou.
+                        Wil je meer weten, een reservering maken of iets anders bespreken? Kom langs, bel, mail of stuur een berichtje, ons team staat voor je klaar met open armen en verse koffie.
+                    </p>
+                    <ul class="info-list">
+                        <li class="info-item">
+                            <img src="images/icon-location.png" width="40" height="40" alt="Locatie"/>
+                            <span class="info-item-text">
+                                <span class="info-item-text-main">Locatie</span>
+                                <span class="info-item-text-sub">Melkstraat 3, 1500 Halle</span>
+                            </span>
+                        </li>
+                        <li class="info-item"><img src="images/icon-mail.png" width="40" height="40" alt="E-mailadres"/>
+                            <span class="info-item-text">
+                                <span class="info-item-text-main">E-mailadres</span>
+                                <span class="info-item-text-sub">info@blondies.be</span>
+                            </span>                        
+                        <li class="info-item">
+                            <img src="images/icon-phone.png" width="40" height="40" alt="Telefoonnummer"/>
+                            <span class="info-item-text">
+                                <span class="info-item-text-main">Telefoonnummer</span>
+                                <span class="info-item-text-sub">+32 479 94 10 28</span>
+                            </span>                         
+                        </li>
+                    </ul>
+                    <div class="opening-block">
+                        <div class="opening-title">Onze openingstijden</div>
+                        <ul class="opening-list">
+                            <li><span class="opening-list-title">Dinsdag tot donderdag:</span> <span class="opening-list-text">08:00 – 17:00</span></li>
+                            <li><span class="opening-list-title">Vrijdag & zaterdag:</span> <span class="opening-list-text">08:00 – 22:00</span></li>
+                            <li><span class="opening-list-title">Zondag & maandag:</span> <span class="opening-list-text">neemt ons team een kleine koffiepauze om op te laden.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form-col">
+                    <p class="section-description-bodytext contact-form-text">
+                        Bij Blondies draait alles om verbinding met onze koffie, met de buurt en vooral met jou.
+                        Wil je meer weten, een reservering maken of iets anders bespreken? Kom langs, bel, mail of stuur een berichtje, ons team staat voor je klaar met open armen en verse koffie.
+                    </p>
+                    <div class="contact-form-wrap">
+                        
+                        <form class="styled-contact-form" autocomplete="off" novalidate>
+                            <div class="form-group">
+                                <label for="naam">Jouw naam & voornaam <br>
+                                <span class="form-group-subtext">(zodat we weten wie we mogen verwelkomen) </span>
+                                </label>
+                                <input required id="naam" name="naam" type="text" placeholder="Naam & voornaam">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mailadres<br>
+                                    <span class="form-group-subtext">(om je snel te kunnen antwoorden)</span>
+                                </label>
+                                <input required id="email" name="email" type="email" placeholder="E-mailadres">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefoon">Telefoonnummer<br>
+                                    <span class="form-group-subtext">(voor het geval we je liever bellen)</span>
+                                </label>
+                                <input id="telefoon" name="telefoon" type="tel" placeholder="Telefoonnummer">
+                            </div>
+                            <div class="form-group">
+                                <label for="onderwerp">Waar gaat het over?</label>
+                                <select id="onderwerp" name="onderwerp">
+                                    <option value="">Over welke koffie (en lekkere brownie)?</option>
+                                    <option>Koffiebar</option>
+                                    <option>Reservering</option>
+                                    <option>Evenementen</option>
+                                    <option>Andere vraag</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="boodschap">Wat wil je ons zeggen?<br>
+                                    <span class="form-group-subtext">(We lezen alles met veel plezier!)</span>
+                                </label>
+                                <textarea required id="boodschap" name="boodschap" rows="4" placeholder="Tip hier je bericht..."></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Stuur het aroma de wereld in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Map Section (Full width, 400px height, no bottom space) -->
+        <section class="map-section" aria-label="Locatie kaart">
+            <iframe
+                src="https://www.google.com/maps?q=Melkstraat%203,%201500%20Halle&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+            ></iframe>
+        </section>
+    </main>
+    
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/load-components.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+        // Contact form handling
+        $(document).ready(function() {
+            $('.styled-contact-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                const submitButton = $(this).find('button[type="submit"]');
+                const originalText = submitButton.text();
+                
+                // Simulate form submission
+                submitButton.text('SENDING...').prop('disabled', true);
+                
+                setTimeout(function() {
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                    $('.styled-contact-form')[0].reset();
+                    submitButton.text(originalText).prop('disabled', false);
+                }, 1500);
+            });
+        });
+    </script>
+</body>
+</html>
+
