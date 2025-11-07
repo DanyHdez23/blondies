@@ -294,7 +294,7 @@ ul {
     background-color: var(--primary-gold);
     margin-bottom: 30px;
     padding: 8px 50px;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 
 }
@@ -311,10 +311,10 @@ ul {
    }
 .section-badge {
     display: inline-block;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: var(--primary-gold);
     margin-bottom: 15px;
 }
@@ -325,7 +325,7 @@ ul {
 
 .section-title {
     font-family: var(--font-inter);
-    font-size: 36px;
+    font-size: 33px !important;
     font-weight: 600;
     line-height: 1;
     margin-bottom: 25px;
@@ -612,7 +612,7 @@ ul {
 }
 
 .benefit-description {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
     color: var(--text-gray);
     margin-bottom: 25px;
@@ -701,7 +701,7 @@ ease;
 }
 
 .cta-section-description {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.4;
     font-weight: 200;
     color: var(--text-gray);
@@ -753,7 +753,7 @@ ease;
 }
 
 .menu-item {
-    padding: 20px 0;
+    padding: 18px 0;
     border-bottom: none;
 }
 
@@ -803,7 +803,7 @@ ease;
 .menu-col-price {
     font-family: var(--font-inter);
     font-weight: 600;
-    font-size: 23px;
+    font-size: 18px;
     color: var(--dark-brown);
     text-align: right;
     white-space: nowrap;
@@ -881,7 +881,7 @@ ease;
 
 .contacteer-team-description {
     font-family: var(--font-inter);
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
     color: var(--white);
     line-height: 1.6;
@@ -1026,7 +1026,10 @@ ease;
 }
 
 .menu-hero{
-    background-image: url('../images/over-ons-gallery-image2.png');
+    background-image: url('../images/Sfeer Blondies 6-2.jpg');
+    background-position: center 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .page-hero::before {
@@ -1637,7 +1640,7 @@ ease;
 }
 
 .contact-pg-text{
-    font-size: 18px;
+    font-size: 16px;
 }
 .contact-intro {
     font-size: 15.5px;
@@ -1663,7 +1666,7 @@ ease;
     font-weight: 500;
 }
 .info-item img {
-    width: 40px; height: 40px; margin-top: 2px;
+    width: 35px; height: 35px; margin-top: 2px;
     display: inline-block;
 }
 .info-item-text{
@@ -1672,11 +1675,11 @@ ease;
     gap: 5px;
 }
 .info-item-text-main{
-    font-size: 18px;
+    font-size: 16px;
     color: var(--dark-brown);
 }
 .info-item-text-sub{
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-gray);
     font-weight: 400;
 }
@@ -1685,13 +1688,13 @@ ease;
     /* background: #faf6ec;
     border-radius: 6px;
     padding: 17px 17px 13px 16px;
-    margin-top: 13px;
     margin-bottom: 10px; */
+    margin-top: 20px;
 }
 .opening-title {
     color: var(--dark-brown);
     font-weight: 700;
-    font-size: 15.5px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 .opening-list {
@@ -1701,14 +1704,14 @@ ease;
 }
 .opening-list-title {
 
-    font-size: 14px;
+    font-size: 15px;
     color: var(--black);
     font-weight: 500;
 }
 
 .opening-list-text {
 
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-gray);
     font-weight: 500;
 }
@@ -1727,7 +1730,7 @@ ease;
     flex-direction: column;
 }
 .contact-form-text {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--dark-brown);
     padding-top: 80px;
 }

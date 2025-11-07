@@ -526,7 +526,16 @@
     
     /* About Hero Section */
     .page-hero.about-hero {
-        height: 55vh;
+        height: 30vh;
+    }
+   /*Heros Subpages*/
+    .page-hero{
+        height: 30vh !important;
+    }
+
+    /*About subpage*/
+    .quote-text {
+        font-size: 16px;
     }
     
     .about-hero .hero-title, .page-hero  .hero-title {
@@ -831,7 +840,7 @@
     }
     
     .hero-title {
-        font-size: 32px;
+        font-size: 36px !important;
     }
     
     .section-content {
@@ -1006,7 +1015,7 @@
     
     /* Sections Common */
     .section-title {
-        font-size: 24px;
+        font-size: 24px !important;
     }
     
     .section-subtitle {
@@ -1265,7 +1274,11 @@
     
     /* About Hero Section */
     .page-hero.about-hero {
-        height: 45vh;
+        height: 30vh;
+    }
+    
+    .page-hero{
+        height: 30vh !important;
     }
     
     .about-hero .hero-title {
