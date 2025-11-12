@@ -1032,6 +1032,20 @@ ease;
     background-repeat: no-repeat;
 }
 
+.gallery-hero {
+    background-image: url('../images/Gallery-hero.jpg');
+    background-position: center 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-hero {
+    background-image: url('../images/car2.jpg');
+    background-position: center 65%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .page-hero::before {
     content: '';
     position: absolute;

@@ -65,6 +65,8 @@
     .benefits-grid {
         gap: 30px;
     }
+
+    
 }
 
 /* Tablet Portrait & Small Desktop (768px - 1199px) */
@@ -96,6 +98,7 @@
     .next-btn {
         right: -12px;
     }
+    
 }
 
 @media (max-width: 991px) {
@@ -888,6 +891,10 @@
     .menu-gallery-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+    .container.menu-homepage {
+        width: 95% !important;
+
     }
 }
 
