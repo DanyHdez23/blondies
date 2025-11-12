@@ -1040,7 +1040,7 @@ ease;
 }
 
 .contact-hero {
-    background-image: url('../images/car2.jpg');
+    background-image: url('../images/Brazil.jpg') !important;
     background-position: center 65%;
     background-size: cover;
     background-repeat: no-repeat;
