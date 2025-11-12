@@ -1046,7 +1046,7 @@ ease;
     background-repeat: no-repeat;
 }
 
-/*
+
 .page-hero::before {
     content: '';
     position: absolute;
@@ -1056,7 +1056,13 @@ ease;
     height: 100%;
     background: rgb(6 6 6 / 55%);
     z-index: 1;
-}*/
+}
+
+.page-hero.contact-hero::before,
+.page-hero.gallery-hero::before {
+  background: rgb(6 6 6 / 25%) !important;
+  content: none !important;
+}
 
 .page-hero .container {
     position: relative;
