@@ -1033,14 +1033,14 @@ ease;
 }
 
 .gallery-hero {
-    background-image: url('/images/Gallery-hero.jpg');
+    background-image: url('images\gallery-hero.jpg');
     background-position: center 80%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .contact-hero {
-    background-image: url('/images/Brazil.jpg') !important;
+    background-image: url('images\brazil.jpg');
     background-position: center 65%;
     background-size: cover;
     background-repeat: no-repeat;
