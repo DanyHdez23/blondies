@@ -1033,14 +1033,14 @@ ease;
 }
 
 .page-hero.gallery-hero {
-    background-image: url('../images/gallery-hero.jpg');
+    background-image: url('https://magenta-quail-269925.hostingersite.com/images/Gallery-hero.jpg');
     background-position: center 80%;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .page-hero.contact-hero {
-    background-image: url('../images/brazil.jpg');
+    background-image: url('https://magenta-quail-269925.hostingersite.com/images/Brazil.jpg');
     background-position: center 65%;
     background-size: cover;
     background-repeat: no-repeat;
