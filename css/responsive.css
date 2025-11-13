@@ -877,6 +877,10 @@
         text-align: left;
         padding: 20px 0;
     }
+
+    .menu-pdf-object, .menu-pdf-iframe {
+    height: 400px;
+    }
     
     .menu-item-price,
     .menu-prices {
@@ -1119,6 +1123,11 @@
     .menu-column {
         padding: 0px 30px;
     }
+
+    .menu-pdf-object, .menu-pdf-iframe {
+    height: 250px;
+    }
+
     /* Contacteer Team Section */
     .contacteer-team-section {
         padding: 50px 0;
@@ -1413,6 +1422,10 @@
     
     .menu-column-title {
         font-size: 18px;
+    }
+
+    .menu-pdf-object, .menu-pdf-iframe {
+    height: 200px;
     }
     
     /* Menu Gallery Grid */
