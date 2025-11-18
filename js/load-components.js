@@ -106,15 +106,15 @@ function initializeFooter() {
     }
     
     // Social media links (placeholder functionality)
-    const socialLinks = document.querySelectorAll('.social-link');
-    socialLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const platform = this.getAttribute('aria-label');
-            console.log(`Social link clicked: ${platform}`);
-            // Here you would typically redirect to actual social media pages
-        });
-    });
+    // const socialLinks = document.querySelectorAll('.social-link');
+    // socialLinks.forEach(link => {
+    //     link.addEventListener('click', function(e) {
+    //         e.preventDefault();
+    //         const platform = this.getAttribute('aria-label');
+    //         console.log(`Social link clicked: ${platform}`);
+    //         // Here you would typically redirect to actual social media pages
+    //     });
+    // });
     
     console.log('Footer functionality initialized');
 }
