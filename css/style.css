@@ -1631,7 +1631,7 @@ ease;
 }
 @media (max-width: 720px) {
   .coffee-blends-section { padding: 34px 0 16px 0; }
-  .blend-card { flex-direction: column; align-items: flex-start; }
+  .blend-card { flex-direction: column!important; align-items: flex-start; }
   .blend-img { width: 100%; min-height: 150px; }
   .blend-content { padding: 18px 18px 8px 18px; }
 }
