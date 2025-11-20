@@ -47,8 +47,8 @@
                             Bij Blondies geloven we dat échte smaak begint bij de oorsprong. Daarom branden we onze koffiebonen zelf, in kleine batches, met behulp van zonne-energie. Zo hebben we volledige controle over kwaliteit, versheid en smaak, én beperken we onze ecologische voetafdruk. Elke kop die we serveren, is het resultaat van zorg, nieuwsgierigheid en pure passie. Geen massaproductie, maar micro-roasting op maat van elke oogst.                        
                         </p>
                         <div class="padding-bottom-btn">
-                            <a href="#about" class="cta-button primary-cta-button ">Onze koffieblends</a>
-
+                            <a href="#koffieblends" class="cta-button primary-cta-button ">Onze koffieblends</a>
+                            
                         </div>
                         <h2 class="section-title padding-bottom-sec">Van ver gehaald, met zorg gekozen</h2>
                         <p class="section-description">
@@ -66,6 +66,7 @@
             </div>
         </section>
         
+
         <!-- Coffee That Cares Section -->
         <section class="coffee-care-section">
             <div class="container">
@@ -90,26 +91,19 @@
             </div>
         </section>
         <!-- Menu Display Section - Copied from menu.html -->
-        <section class="menu-display-section">
+        <section class="menu-display-section" id="koffieblends">
             <div class="menu-display-container">
-                <!-- Header Section -->
-                <div class="menu-display-header">
-                    <span class="section-badge">DE BESTE KOFFIE</span>
-                    <h2 class="section-title padding-bottom-sec animate-in">Afterwork bij Blondies</h2>
-                    <p class="menu-display-description">
-                        Kom je met collega's of vrienden langs na het werk? Geniet van onze heerlijke koffie, signature drinks en kleine hapjes in een gezellige sfeer. Perfect voor ontspanning en ontmoeting.
-                    </p>
-                </div>
+                
                 <!-- Container for Menu Gallery -->
-                <div class="container">
+                <div class="container" >
                     <div class="menu-display-content">
                         <div class="menu-display-content-sec">
-                            <section class="coffee-blends-section">
+                            <section class="coffee-blends-section"  >
                                 <div class="coffee-blends-header">
                                     <span class="section-badge">DE BESTE KOFFIE</span>
                                     <h2 class="coffee-blends-title">Onze koffieblends</h2>
                                     <p class="coffee-blends-sub">
-                                        Geniet van onze gebrande koffie, afkomstig uit de mooiste specialty-gebieden — elke sloot mag mee!
+                                    <!--Geniet van onze gebrande koffie, afkomstig uit de mooiste specialty-gebieden — elke sloot mag mee! -->    
                                     </p>
                                 </div>
                                 <div class="blend-card-list">
@@ -225,7 +219,7 @@
                                 Spring binnen in onze koffiebar in hartje Halle.
 Vraag naar je favoriete roast of ontdek iets nieuws, versgebrand, bewust gezet en met veel liefde en goesting geserveerd.
                             </p>
-                            <a href="#contact" class="cta-button primary-cta-button">RESERVEER EEN TAFEL</a>
+                            <a href="reserveren.html" class="cta-button primary-cta-button">RESERVEER EEN TAFEL</a>
                         </div>
                     </div>
                 </div>
@@ -263,5 +257,27 @@ Vraag naar je favoriete roast of ontdek iets nieuws, versgebrand, bewust gezet e
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/load-components.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Script for button -->
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const link = document.querySelector('a[href="#koffieblends"]');
+  const target = document.getElementById('koffieblends');
+
+  if (link && target) {
+    link.addEventListener('click', (e) => {
+      e.stopImmediatePropagation(); // bloquea otros JS
+      e.preventDefault();
+
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }, true);
+  }
+});
+</script>
+
+
 </body>
 </html>
