@@ -1629,6 +1629,14 @@ ease;
     font-style: normal;
     padding-top: 10px;
 }
+
+.blend-attribute {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 20px;
+}
 @media (max-width: 720px) {
   .coffee-blends-section { padding: 34px 0 16px 0; }
   .blend-card { flex-direction: column!important; align-items: flex-start; }
