@@ -366,6 +366,10 @@
     padding-right: 0px;
 }
 
+.coffee-bags-section {
+    background-position: bottom center;
+    background-size: 70%;
+
 }
 
 @media (max-width: 740px) {
@@ -1351,6 +1355,12 @@
     .afterwork-list li {
         font-size: 15px;
     }
+
+    .coffee-bags-section {
+    background-position: bottom center;
+    background-size: 70%;
+
+}
 }
 
 @media (max-width: 375px) {

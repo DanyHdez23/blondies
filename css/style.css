@@ -1525,6 +1525,23 @@ ease;
     background-image: url('../images/Koffie-en-Roastery\ Blondies.jpg');
  }
 
+.coffee-bags-section {
+   padding: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../images/deco-koffie.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #f8f6f6 ; 
+}
+
+.coffe-bags-title {
+    font-size: 27px !important;
+}
+
+
+
 /* ===========================
    COFFEE BLENDS FEATURE LIST
    =========================== */
