@@ -65,6 +65,19 @@
     line-height: 1.4;
 }
 
+.footer-text-column a {
+    margin: 0;
+    font-size: 16px;
+    color: var(--white);
+    font-family: var(--font-inter);
+    line-height: 1.4;
+    transition: var(--transition);
+}
+
+.footer-text-column a:hover {
+    color: var(--primary-gold);
+}
+
 .footer-icon {
     width: 32px;
     height: 32px;
@@ -123,12 +136,12 @@
 
 .hours-item .day {
     color: var(--primary-gold);
-    font-weight: 400;
+    font-weight: 600 !important;
 }
 
 .hours-item .time {
     color: var(--white);
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 /* Column 4: Follow Our Activity */

@@ -66,7 +66,10 @@
         gap: 30px;
     }
 
+    .cta-afterwork-section {
+    background-position: center;
     
+}
 }
 
 /* Tablet Portrait & Small Desktop (768px - 1199px) */
@@ -340,6 +343,29 @@
 .foto-gallery-grid .item-10 { grid-column: span 1; grid-row: span 2; }
 .foto-gallery-grid .item-11 { grid-column: span 1; grid-row: span 2; }
     
+.afterwork-description {
+    text-align: center;
+    padding-bottom: 30px; /* centra TODO el contenido dentro */
+}
+
+.afterwork-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;        /* centra el UL */
+    text-align: left;      /* ← fuerza el texto a alinearse a la izquierda */
+    display: inline-block; /* ← truco clave: mantiene el UL centrado pero texto alineado left */
+}
+
+.cta-afterwork-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.cta-afterwork-text {
+    padding-right: 0px;
+}
+
 }
 
 @media (max-width: 740px) {
@@ -1281,7 +1307,7 @@
     .footer-contact-row { gap: 10px; justify-content: center; }
     
     .footer-icon {
-        width: 20px;
+        width: 22px;
         height: 20px;
     }
     .footer-social {
@@ -1321,6 +1347,10 @@
     .foto-gallery-grid .item-10 { grid-column: span 2; grid-row: span 2; }
     .foto-gallery-grid .item-11 { grid-column: span 2; grid-row: span 2; }
     /* Extra Small Mobile (up to 375px) */
+
+    .afterwork-list li {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1637,7 +1667,7 @@
   .footer-contact-info { align-items: center; }
   .footer-contact-row { justify-content: center; }
   .footer-title { font-size: 18px; margin-bottom: 12px; }
-  .footer-links a, .footer-text-column p, .hours-item { font-size: 14px; }
+  .footer-links a, .footer-text-column p, .footer-text-column a, .hours-item { font-size: 15px; }
   .footer-bottom { padding-top: 10px; gap: 7px; }
   .footer-dna-logo { align-items: center; width: auto; }
   .footer-dna-logo img { height: 75px; }
