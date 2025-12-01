@@ -1918,6 +1918,7 @@ span.form-group-subtext {
 .afterwork-list li {
     position: relative;
     padding-left: 20px;
+    padding-bottom: 12px;
 }
 
 .afterwork-list li::before {
