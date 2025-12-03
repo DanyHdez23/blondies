@@ -1022,12 +1022,13 @@ ease;
 }
 .about-hero{
 
-    background-image: url('../images/over-ons-bg.png');
+    background-image: url('../images/B0001658.jpg');
+    background-position: center 27%;
 }
 
 .menu-hero{
-    background-image: url('../images/Sfeer Blondies 6-2.jpg');
-    background-position: center 80%;
+    background-image: url('../images/B0001648.jpg');
+    background-position: center 55%;
 
 }
 
@@ -1522,7 +1523,8 @@ ease;
    =========================== */
 
  .koffie-roastery-hero{
-    background-image: url('../images/Koffie-en-Roastery\ Blondies.jpg');
+    background-image: url('../images/B0001674.jpg');
+    background-position: center 67%;
  }
 
 .coffee-bags-section {
