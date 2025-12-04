@@ -183,8 +183,9 @@
                   value="Blondies Website"
                 />
 
-                <!-- Anti-spam (honeypot) -->
+                <!-- Anti-spam (honeypot) 
                 <input type="checkbox" name="botcheck" style="display: none" />
+                -->
 
                 <div class="form-group">
                   <label for="naam">
@@ -325,7 +326,7 @@
         form.reset();
       } else {
         console.error("Web3Forms error:", data);
-        alert("Er is iets misgegaan. Probeer het later opnieuw.");
+        alert("Er is iets misgegaan bij het verzenden. Probeer het later opnieuw of mail ons rechtstreeks op info@blondies.be");
       }
     } catch (error) {
       console.error("Network error:", error);
