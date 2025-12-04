@@ -1745,7 +1745,9 @@ ease;
     color: var(--text-gray);
     font-weight: 400;
 }
-
+a.info-item-text-sub:hover {
+    color: #AF944E;
+}
 .opening-block {
     /* background: #faf6ec;
     border-radius: 6px;
