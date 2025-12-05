@@ -1983,17 +1983,3 @@ span.form-group-subtext {
     font-size: 14px;
     text-align: center;
 }
-
-/*PDF MENU*/
-/* Desktop*/
-.menu-pdf-object {
-  display: block;
-  width: 100%;
-  min-height: 650px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.menu-pdf-fallback-card {
-  display: none;
-}

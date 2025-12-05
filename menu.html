@@ -166,7 +166,7 @@
             </p>
           </div>
 
-          <!-- Container for Menu Gallery--
+          <!-- Container for Menu Gallery Original--
 
                     <div class="menu-display-content">
                         <div class="menu-display-content-sec">
@@ -298,19 +298,19 @@
         const isMobile = window.innerWidth <= 767;
 
         if (isMobile) {
-          // 1) Eliminar TODOS los <object> de PDF (no solo por clase)
+          // 1) Remove ALL <object> from PDF (not just by class)
           const pdfObjects = document.querySelectorAll('object[type="application/pdf"]');
           pdfObjects.forEach(function (obj) {
             obj.parentNode.removeChild(obj);
           });
 
-          // 2) Asegurar que la tarjeta se vea
+          // 2) Ensure the card is visible
           const fallbackCards = document.querySelectorAll(".menu-pdf-fallback-card");
           fallbackCards.forEach(function (card) {
             card.style.display = "block";
           });
         } else {
-          // Desktop: ocultar tarjetas y dejar solo PDF
+          // Desktop: Hide cards and leave only PDFs
           const fallbackCards = document.querySelectorAll(".menu-pdf-fallback-card");
           fallbackCards.forEach(function (card) {
             card.style.display = "none";

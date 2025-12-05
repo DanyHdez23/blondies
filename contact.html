@@ -305,7 +305,7 @@
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
 
-    // Estado "enviando"
+    // Status "sending"
     submitBtn.disabled = true;
     submitBtn.textContent = "Bezig met verzenden...";
 
@@ -320,7 +320,7 @@
       const data = await response.json();
 
       if (data.success) {
-        // Ocultar formulario y mostrar mensaje de éxito
+        // Hide form and show success message
         form.style.display = "none";
         successMessage.style.display = "block";
         form.reset();
