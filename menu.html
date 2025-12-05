@@ -25,6 +25,76 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Page-specific PDF menu styles -->
+    <style>
+      /* Desktop / por defecto */
+      .menu-pdf-object {
+        display: block;
+        width: 100%;
+        min-height: 650px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .menu-pdf-fallback-card {
+        display: none;
+      }
+
+      /* Mobile: solo tarjeta con portada + botón */
+      @media (max-width: 767px) {
+        .menu-pdf-object {
+          display: none !important;
+        }
+
+        .menu-pdf-fallback-card {
+          display: block !important;
+          max-width: 420px;
+          margin: 0 auto;
+          padding: 22px 20px;
+          border-radius: 20px;
+          background: #ffffff;
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+          text-align: center;
+        }
+
+        .menu-pdf-cover {
+          width: 100%;
+          border-radius: 14px;
+          margin-bottom: 14px;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+          display: block;
+        }
+
+        .menu-pdf-fallback-title {
+          margin: 0 0 6px;
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .menu-pdf-fallback-text {
+          margin: 0 0 18px;
+          font-size: 14px;
+          line-height: 1.5;
+          opacity: 0.8;
+        }
+
+        .menu-pdf-fallback-button {
+          display: inline-block;
+          padding: 10px 22px;
+          border-radius: 999px;
+          background: #b5954c; /* dorado Blondies */
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: 600;
+          text-decoration: none;
+        }
+
+        .menu-pdf-fallback-button:hover {
+          opacity: 0.9;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Header Placeholder -->
