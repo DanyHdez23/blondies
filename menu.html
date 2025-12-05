@@ -95,6 +95,7 @@
         }
       }
     </style>
+
   </head>
   <body>
     <!-- Header Placeholder -->
@@ -290,5 +291,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/load-components.js"></script>
     <script src="js/main.js"></script>
+
+        <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const pdfObject = document.querySelector(".menu-pdf-object");
+        const fallbackCard = document.querySelector(".menu-pdf-fallback-card");
+
+        function togglePdfView() {
+          if (!pdfObject || !fallbackCard) return;
+
+          if (window.innerWidth <= 767) {
+            // Mobile: ocultar PDF, mostrar tarjeta
+            pdfObject.style.display = "none";
+            fallbackCard.style.display = "block";
+          } else {
+            // Desktop: mostrar PDF, ocultar tarjeta
+            pdfObject.style.display = "block";
+            fallbackCard.style.display = "none";
+          }
+        }
+
+        // Ejecutar al cargar
+        togglePdfView();
+
+        // Opcional: actualizar al cambiar tamaño (girar el móvil, etc.)
+        window.addEventListener("resize", togglePdfView);
+      });
+    </script>
+
   </body>
 </html>
