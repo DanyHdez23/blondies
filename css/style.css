@@ -1985,70 +1985,15 @@ span.form-group-subtext {
 }
 
 /*PDF MENU*/
-/* Desktop */
+/* Desktop*/
 .menu-pdf-object {
   display: block;
+  width: 100%;
+  min-height: 650px;
+  border-radius: 20px;
+  overflow: hidden;
 }
+
 .menu-pdf-fallback-card {
   display: none;
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-
-  .menu-pdf-object {
-    display: none;
-  }
-
-  .menu-pdf-fallback-card {
-    display: block;
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 22px 20px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 18px 40px rgba(0,0,0,0.06);
-    text-align: center;
-  }
-
-
-  .menu-pdf-cover {
-    width: 100%;
-    border-radius: 14px;
-    margin-bottom: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
-  }
-
-  .menu-pdf-fallback-title {
-    margin: 0 0 6px;
-    font-size: 18px;
-    font-weight: 600;
-  }
-
-  .menu-pdf-fallback-text {
-    margin: 0 0 18px;
-    font-size: 14px;
-    line-height: 1.5;
-    opacity: 0.8;
-  }
-
-  .menu-pdf-fallback-button {
-    display: inline-block;
-    color: var(--white);
-    padding: 14px 50px;
-    border-radius: 6px!important;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-radius: 0;
-    border: none;
-    cursor: pointer;
-    transition: var(--transition);
-    font-size: 14px !important;
-    background-color: var(--primary-gold);
-  }
-
-  .menu-pdf-fallback-button:hover {
-    opacity: 0.9;
-  }
 }
