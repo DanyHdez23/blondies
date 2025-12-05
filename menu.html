@@ -292,30 +292,30 @@
     <script src="js/load-components.js"></script>
     <script src="js/main.js"></script>
 
-        <script>
+        
+    <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const pdfObject = document.querySelector(".menu-pdf-object");
-        const fallbackCard = document.querySelector(".menu-pdf-fallback-card");
+        const isMobile = window.innerWidth <= 767;
 
-        function togglePdfView() {
-          if (!pdfObject || !fallbackCard) return;
+        if (isMobile) {
+          // 1) Eliminar TODOS los <object> de PDF (no solo por clase)
+          const pdfObjects = document.querySelectorAll('object[type="application/pdf"]');
+          pdfObjects.forEach(function (obj) {
+            obj.parentNode.removeChild(obj);
+          });
 
-          if (window.innerWidth <= 767) {
-            // Mobile: ocultar PDF, mostrar tarjeta
-            pdfObject.style.display = "none";
-            fallbackCard.style.display = "block";
-          } else {
-            // Desktop: mostrar PDF, ocultar tarjeta
-            pdfObject.style.display = "block";
-            fallbackCard.style.display = "none";
-          }
+          // 2) Asegurar que la tarjeta se vea
+          const fallbackCards = document.querySelectorAll(".menu-pdf-fallback-card");
+          fallbackCards.forEach(function (card) {
+            card.style.display = "block";
+          });
+        } else {
+          // Desktop: ocultar tarjetas y dejar solo PDF
+          const fallbackCards = document.querySelectorAll(".menu-pdf-fallback-card");
+          fallbackCards.forEach(function (card) {
+            card.style.display = "none";
+          });
         }
-
-        // Ejecutar al cargar
-        togglePdfView();
-
-        // Opcional: actualizar al cambiar tamaño (girar el móvil, etc.)
-        window.addEventListener("resize", togglePdfView);
       });
     </script>
 
